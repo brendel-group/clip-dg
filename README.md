@@ -7,7 +7,7 @@ If you find the insights from the paper or our code base useful, please cite:
 ```
 @inproceedings{mayilvahanan2025clipdg,
       title={In Search of Forgotten Domain Generalization},
-      author={Prasanna Mayilvahanan and Roland Zimmermann and Thadd{\"a}us Wiedemer and Evgenia Rusak and Attila Juhos and Matthias Bethge and Wieland Brendel},
+      author={Prasanna Mayilvahanan and Roland Zimmermann and Thaddäus Wiedemer and Evgenia Rusak and Attila Juhos and Matthias Bethge and Wieland Brendel},
       booktitle={The Thirteenth International Conference on Learning Representations},
       year={2025},
       url={https://openreview.net/forum?id=tnBaiidobu}
