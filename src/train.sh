@@ -1,1 +1,0 @@
-sbatch train.sbatch val_sketch_style /mnt/qb/work/bethge/pmayilvahanan31/datasets/val_sketch_style
