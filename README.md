@@ -10,5 +10,5 @@ If you find the insights from the paper or our code base useful, please cite:
       author={Prasanna Mayilvahanan and Roland Zimmermann and Thaddäus Wiedemer and Evgenia Rusak and Attila Juhos and Matthias Bethge and Wieland Brendel},
       booktitle={The Thirteenth International Conference on Learning Representations},
       year={2025},
-      url={https://openreview.net/forum?id=tnBaiidobu}
+      url={https://openreview.net/forum?id=Fk3eod9aaD}
 }
