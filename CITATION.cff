@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this repository in your research, please cite it as below."
+authors:
+- family-names: "Mayilvahanan"
+  given-names: "Prasanna"
+  orcid: "https://orcid.org/0009-0005-6728-1307"
+- family-names: "Zimmermann"
+  given-names: "Roland"
+- family-names: "Wiedemer"
+  given-names: "Thaddäus"
+- family-names: "Rusak"
+  given-names: "Evgenia"
+- family-names: "Juhos"
+  given-names: "Attila"
+- family-names: "Bethge"
+  given-names: "Matthias"
+- family-names: "Brendel"
+  given-names: "Wieland"
+title: "My Research Software"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2024.11.01
+url: "https://github.com/brendel-group/clip-dg"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Mayilvahanan"
+    given-names: "Prasanna"
+    orcid: "https://orcid.org/0009-0005-6728-1307"
+  - family-names: "Zimmermann"
+    given-names: "Roland"
+  - family-names: "Wiedemer"
+    given-names: "Thaddäus"
+  - family-names: "Rusak"
+    given-names: "Evgenia"
+   - family-names: "Juhos"
+    given-names: "Attila"
+  - family-names: "Bethge"
+    given-names: "Matthias"
+  - family-names: "Brendel"
+    given-names: "Wieland"
+  url: "https://openreview.net/forum?id=Fk3eod9aaD"
+  collection-title: "The Thirteenth International Conference on Learning Representations"
+  title: "In Search of Forgotten Domain Generalization"
+  year: 2025
