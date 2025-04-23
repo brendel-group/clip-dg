@@ -1,0 +1,59 @@
+# config for eval (keys should match config keys)
+# Each of these arguments will be passed to start a job. Several jobs will be created based on possible combinations
+# of values across arguments. Each value is represented by '-'. Template is given below:
+#cluster
+#  - mp
+#models_eval:
+#  - best
+#directory:
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_ViT-L-14__laion2b_s32b_b82k_False_20240406_084923
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_ViT-L-14__laion2b_s32b_b82k_True_20240406_084924
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_ViT-L-14__laion400m_e32_False_20240406_085022
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_ViT-L-14__laion400m_e32_True_20240406_085022
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_subsample_ViT-L-14__laion2b_s32b_b82k_False_20240406_150044
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_subsample_ViT-L-14__laion2b_s32b_b82k_True_20240406_150044
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_subsample_ViT-L-14__laion400m_e32_False_20240406_150044
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/10K_round2_subsample_ViT-L-14__laion400m_e32_True_20240406_150044
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/2K_round2_ViT-L-14__laion2b_s32b_b82k_False_20240406_075033
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/2K_round2_ViT-L-14__laion2b_s32b_b82k_True_20240406_075033
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/2K_round2_ViT-L-14__laion400m_e32_False_20240406_075033
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/2K_round2_ViT-L-14__laion400m_e32_True_20240406_075033
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/6K_round2_ViT-L-14__laion2b_s32b_b82k_False_20240406_075129
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/6K_round2_ViT-L-14__laion2b_s32b_b82k_True_20240406_075129
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/6K_round2_ViT-L-14__laion400m_e32_False_20240406_075129
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/6K_round2_ViT-L-14__laion400m_e32_True_20240406_075130
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/8K_round2_ViT-L-14__laion2b_s32b_b82k_False_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/8K_round2_ViT-L-14__laion2b_s32b_b82k_True_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/8K_round2_ViT-L-14__laion400m_e32_False_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/8K_round2_ViT-L-14__laion400m_e32_True_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/4K_round2_ViT-L-14__laion2b_s32b_b82k_False_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/4K_round2_ViT-L-14__laion2b_s32b_b82k_True_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/4K_round2_ViT-L-14__laion400m_e32_False_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/4K_round2_ViT-L-14__laion400m_e32_True_20240408_132115
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/evi_baseline_13K_round3_stylistic_v_rest_ViT-L-14__laion2b_s32b_b82k_exp1/
+# batch_size:
+#  - 500
+#eval_data:
+#  - 10K_round1 10K_round2 10K_round1_subsample imagenet-val objectnet-subsample imagenet-v2 imagenet-a imagenet-r imagenet-sketch dn-clipart dn-painting dn-sketch dn-infograph
+#  - dn_real_1k dn_sketch_1k dn_quickdraw_1k dn_infograph_1k dn_painting_1k dn_clipart_1k a_1k objectnet_1k r_1k sketch_1k v2_1k val_1k
+#  - dn_test_combined imagenet_test_combined all_test_combined
+#  - dc_test
+#  - dc_test imagenet-val objectnet-subsample imagenet-v2 imagenet-a imagenet-r imagenet-sketch dn-clipart dn-painting dn-sketch dn-infograph dn_real_1k dn_sketch_1k dn_quickdraw_1k dn_infograph_1k dn_painting_1k dn_clipart_1k a_1k objectnet_1k r_1k sketch_1k v2_1k val_1k dn_test_combined imagenet_test_combined all_test_combined
+#  - laion1m
+# # Batchsizes optimal
+# # For ImageNet like datasets on 80GB A100 for ViT-L-14 I could use 1000 I think. but need to check
+# # For ViTL14/B16 use  python3 submit_jobs.py --job_type=eval --gpu=2 --cpus=16 --memory=500000
+cluster:
+  - mpi
+models_eval:
+  - best
+directory:
+  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/13K_round3_ViT-L-14__laion2b_s32b_b82k_False_20240420_141053/
+  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/evi_baseline_6K_round3_stylistic_v_rest_balanced_ViT-L-14__laion2b_s32b_b82k_exp1/
+  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/7.5K_round3_balanced_ViT-L-14__laion2b_s32b_b82k_False_20240420_141053/
+  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/evi_baseline_13K_round3_natural_v_rest_ViT-L-14__laion2b_s32b_b82k_exp1/
+  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/evi_baseline_11K_round3_natural_v_rest_balanced_ViT-L-14__laion2b_s32b_b82k_exp1/
+batch_size:
+  - 250
+eval_data:
+  - imagenet-train

@@ -1,0 +1,61 @@
+## config for vis (keys should match config keys)
+# Each of these arguments will be passed to start a job. Several jobs will be created based on possible combinations
+# of values across arguments. Each value is represented by '-'. Template is given below:
+#cluster:
+#  - mpi
+#sample:
+#  - random
+#  - best
+#  - worst
+#directory:  # if you want save random images then give a directory loc (it will be created on its own)
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240204_161233
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240204_161627
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240204_161713
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240204_161813
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240205_091631
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240205_092120
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240205_092431
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/multidataset_20240205_092829
+#eval_data:
+#  - imagenet-val
+#  - objectnet-subsample
+#  - imagenet-v2
+#  - imagenet-a
+#  - dn-real
+#  - imagenet-r
+#  - imagenet-sketch
+#  - dn-clipart
+#  - dn-painting
+#  - dn-sketch
+#  - dn-infograph
+#use_preds:   # this is to use predictions. if False, then random images from the dataset will be plotted.
+#  - True
+## config for vis (keys should match config keys)
+#cluster:
+#  - mpi
+#sample:
+#  - random
+#  - best
+#  - worst
+#directory:
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/evi_baseline_13K_round3_stylistic_v_rest_ViT-L-14__laion2b_s32b_b82k_exp1/
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/7.5K_round3_balanced_ViT-L-14__laion2b_s32b_b82k_False_20240420_141053/
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/13K_round3_natural_v_rest_ViT-g-14__laion2b_s34b_b88k_False_20240424_011920/
+#  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/results/13K_round3_ViT-L-14__laion2b_s32b_b82k_False_20240420_141053/
+#eval_data:
+#  - laion1m_0.95
+#  - laion1m_0.98
+#use_preds:
+#  - True
+cluster:
+  - mpi
+sample:
+  - random
+  - random
+directory:
+  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/images/sketch_left_out/
+  - /is/cluster/fast/pmayilvahanan/clip_ood_part2/images/r_left_out/
+eval_data:
+  - laion200m
+use_preds:
+  - False

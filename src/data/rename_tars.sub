@@ -1,0 +1,15 @@
+executable = rename_tars.sh
+request_cpus = 1
+request_memory = 50000
+request_disk = 50G
+arguments = $(Process)
+log_root = /is/cluster/fast/pmayilvahanan/clip_ood_part2/jobs/$(ClusterId)
+error = $(log_root).err
+output = $(log_root).out
+log = $(log_root).log
+MaxTime = 604800
+
+periodic_remove = (JobStatus =?= 2) && ((CurrentTime - JobCurrentStartDate) >= $(MaxTime))
+queue
+
+
